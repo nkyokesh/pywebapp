@@ -3,6 +3,7 @@ LABEL maintainer="nkyokesh@gmail.com"
 ENV REFRESHED_AT 2020-24-01
 
 RUN apt-get -qq update && apt-get -qqy install python
+RUN apt-get install pip
 RUN pip install flask
 
 RUN mkdir -p /flaskapp
